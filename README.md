@@ -275,9 +275,3 @@ matni ko'rinadi.
 ```bash
 kubectl apply -f https://github.com/jetstack/cert-manager/releases/download/v1.14.2/cert-manager.yaml
 ```
-
-
-
-# DigitalOcean token
-
-dop_v1_09da56fbfc8b1d416b955432db77ee7a600b88ba8305e04628323cce128b1d14
