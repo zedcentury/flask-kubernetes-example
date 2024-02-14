@@ -1,0 +1,17 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: flask-ingress
+spec:
+  rules:
+    # replace with your domain
+    - host: flask.zedcentury.com
+      http:
+        paths:
+          - pathType: Prefix
+            path: "/"
+            backend:
+              service:
+                name: flask-service
+                port:
+                  number: 80

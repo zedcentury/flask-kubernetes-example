@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: flask-deployment
+  labels:
+    app: flask-deployment
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: flask-deployment
+  template:
+    metadata:
+      labels:
+        app: flask-deployment
+    spec:
+      containers:
+        - name: flask-deployment
+          # Replace with your image
+          image: registry.digitalocean.com/zedcentury-container-registry/flask-project
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 5000
