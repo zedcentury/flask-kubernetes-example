@@ -5,7 +5,7 @@ metadata:
 spec:
   rules:
     # replace with your domain
-    - host: flask.zedcentury.com
+    - host: flask-k8s.zedcentury.com
       http:
         paths:
           - pathType: Prefix
